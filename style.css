@@ -6,17 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-#tooltip {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.85);
-    color: white;
-    padding: 6px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    pointer-events: none;
-    display: none;
-    z-index: 9999;
-}
+
 
 
 /* BODY */
@@ -51,15 +41,7 @@ body {
     animation: luxuryFade 1.4s ease-out;
 }
 
-/* Arabic */
-.fancy-title .arabic {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
-    font-weight: 600;
-    letter-spacing: 6px;
-    color: #2d3436;
-    opacity: 0.85;
-}
+
 
 /* Divider */
 .fancy-title .divider {
@@ -101,18 +83,7 @@ body {
     animation: goldShimmer 6s linear infinite;
 }
 
-/* Glow behind title */
-.fancy-title .english::after {
-    content: 'TUNISIA';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    letter-spacing: 14px;
-    color: rgba(245, 211, 122, 0.35);
-    filter: blur(28px);
-    z-index: -1;
-}
+
 
 /* ====== MAP ====== */
 .map-wrapper {
@@ -139,33 +110,7 @@ body {
     transform: scale(1.025);
 }
 
-/* ====== ANIMATIONS ====== */
-@keyframes goldShimmer {
-    0% { background-position: 0%; }
-    100% { background-position: 300%; }
-}
 
-@keyframes luxuryFade {
-    from {
-        opacity: 0;
-        transform: translateY(-40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} 
 
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
