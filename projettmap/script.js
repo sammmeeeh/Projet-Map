@@ -1,3 +1,5 @@
+//Affiche une info-bulle montrant le nom du gouvernorat lorsque l'utilisateur survole une zone de la carte
+
 const tooltip = document.getElementById("tooltip");
 
 document.querySelectorAll("area").forEach(area => {

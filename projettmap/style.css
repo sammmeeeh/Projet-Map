@@ -1,5 +1,4 @@
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +6,6 @@
 }
 
 
-
-/* BODY */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(
@@ -26,65 +23,25 @@ body {
     padding: 40px 20px;
 }
 
-/* CONTAINER */
+
 .container {
     width: 100%;
     max-width: 1200px;
     text-align: center;
 }
 
-/* ====== LUXURY TITLE ====== */
-.fancy-title {
-    position: relative;
-    margin-bottom: 70px;
-    animation: luxuryFade 1.4s ease-out;
-}
 
-
-
-/* Divider */
-.fancy-title .divider {
-    width: 120px;
-    height: 2px;
-    margin: 22px auto;
-    background: linear-gradient(
-        to right,
-        transparent,
-        #caa24d,
-        #f5d37a,
-        #caa24d,
-        transparent
-    );
-    box-shadow: 0 0 20px rgba(202, 162, 77, 0.6);
-}
-
-/* English Title */
+/* TITRE */
 .fancy-title .english {
     font-family: 'Playfair Display', serif;
     font-size: 6rem;
     font-weight: 900;
     letter-spacing: 14px;
     text-transform: uppercase;
-
-    background: linear-gradient(
-        120deg,
-        #1e1e1e,
-        #caa24d,
-        #f5d37a,
-        #caa24d,
-        #1e1e1e
-    );
-    background-size: 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    position: relative;
-    animation: goldShimmer 6s linear infinite;
+    color: #caa24d; /* solid gold */
 }
 
-
-
-/* ====== MAP ====== */
+/*  MAP  */
 .map-wrapper {
     background: rgba(255, 255, 255, 0.92);
     padding: 40px;
@@ -109,26 +66,3 @@ body {
     transform: scale(1.025);
 }
 
-
-
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-
-
-    .fancy-title .english {
-        font-size: 3.8rem;
-        letter-spacing: 8px;
-    }
-
-    .map-wrapper {
-        padding: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .fancy-title .english {
-        font-size: 3rem;
-        letter-spacing: 5px;
-    }
-}
