@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+     <form> <!--action="analyse.php">> -->
+        <fieldset>
+            <legend> Informations personnel</legend>
+            <label for="prenom" class="label-perso">Prenom</label>
+            <input type="text" id="prenom" size="30" maxlength="15" required /><br />
+            <!-- size pour elargir zone de saisie -->
+            <!-- maxlength pour limiter le saisie  -->
+            <label for="nom" class="label-perso">Nom</label>
+            <input type="text"
+            pattern="[A-Z][a-z]+" id="nom" size="30" maxlength="15" /><br />
+            <label for="date" class="label-perso">date de naissance</label>
+            <input type="date" id="date" /><br />
+            <label for="telephone" class="label-perso">Telephone</label>
+            <input type="tel" id="telephone" /><br />
+            <label for="email" class="label-perso">Email</label>
+            <input type="email" id="Email" /><br />
+        </fieldset>
+         <p>Etes-vous motorise ?</p>
+         <input type="radio" name="motorise" id="oui"><label for ="oui">oui</label><br/>
+         <input type="radio" name="motorise" id="non"><label for ="oui">non</label>
+         <p>Quel  modeles  de voiture preferez-vous ?</p>
+         <select>
+            <!-- select est une liste de roulant -->
+            <optgroup label="Ford">
+                <option>Fiesta</option>
+                <option >Escort</option>
+                <option >Focus</option>
+                 
+            </optgroup>
+            <optgroup label ="Reanult">
+                <option >Clio</option>
+                <option >Megane</option>
+                <option>Symbol</option>
+            </optgroup>
+             <optgroup label ="Citroen">
+                <option >DS4</option>
+                <option >Cactus</option>
+                <option>C1</option>
+            </optgroup>
+         </select> 
+         <p>Note/10</p>
+         <input type="number" max="10" min="0" step="2">
+         <!-- step controle le nombre d'incrementation  -->
+         <p>Quels type de voiture preferez-vous ?</p>
+        <input type="checkbox" id=""><label for="4x4">4x4</label></br>
+        <input type="checkbox" id="berline"><label for="berline">Berline</label></br>
+        <input type="checkbox" id="sport"><label for="sport">Sport</label></br>
+        <input type="checkbox" id="break"><label for="break">Break</label></br>
+        <p>Votre commentaires ici:</p>
+        <textarea rows="5" cols="30"> </textarea></br>
+        <input type="submit" value="Analyser le formulaire">
+        <input type="reset" value="Reinitialiser le formulaire">
+
+         
+
+
+    </form>
+</body>
+
+</html>

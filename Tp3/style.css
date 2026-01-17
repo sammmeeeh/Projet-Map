@@ -1,0 +1,22 @@
+.label-perso {
+    display:inline-block;
+    /* display c pour transformer un text en tant que block nb que ne doit pas etre obligatoirement un text  */
+    /* block transfomre les texts en tant que block a travers display et  fait retour a la ligne pour l'eviter retourne a la ligne en peut utiliser float:left sinon en utilise directement inline-block */
+        width :150px; 
+}
+input {
+    border: 2px solid  green;
+   border-radius: 5px;
+    color:burlywood;
+    margin-bottom:2px;
+    
+
+}
+fieldset {
+    width:1000px;
+    background-color:lightblue;
+    border-color: brown;
+}
+p{
+    margin: 10px;
+}

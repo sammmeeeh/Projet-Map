@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatibus porro accusantium autem
+            corporis repellat, ab ducimus, vitae laudantium praesentium deserunt? Obcaecati, at! Deserunt repellat
+            impedit inventore. Voluptatem, obcaecati quaerat?</p>
+        <button onclick="document.getElementById('paragraph').style.visibility='visible'">Afficher</button>
+        <button onclick="document.getElementById('paragraph').style.visibility='hidden'">Cacher</button>
+        <input type="color" oninput="document.getElementById('paragraph').style.color=this.value">
+        <!-- <input type="text" oninput="document.getElementById('paragraph').innerHTML=this.value"> -->
+    </div>
+
+</body>
+
+</html>

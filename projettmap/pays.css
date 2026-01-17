@@ -1,0 +1,209 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* En-tête */
+header {
+background: linear-gradient(135deg, #1F3C88, #274B9F);
+
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Sections */
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #274B9F;
+    font-size: 32px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #444444;
+    padding-bottom: 10px;
+}
+
+/* Section Présentation */
+.presentation .contenu {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.presentation img {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.presentation .texte {
+    width: 55%;
+}
+
+.presentation p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Statistiques */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.stat-box {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.stat-box h3 {
+    color: #274B9F;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.stat-box .nombre {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.stat-box .detail {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Spécialités */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.carte {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #274B9F;
+    transition: transform 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.carte h3 {
+    color: #274B9F;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.carte p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Monuments */
+.monument {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.monument:last-child {
+    margin-bottom: 0;
+}
+
+.monument img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.monument .description {
+    flex: 1;
+}
+
+.monument h3 {
+    color: #274B9F;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.monument p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.project-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.project-navigation .home-btn {
+    padding: 12px 25px;
+    background: #274B9F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.project-navigation .home-btn:hover {
+    background: #1f3d85;
+}
+
+
+/* Footer */
+footer {
+    background:#1F3C88;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+

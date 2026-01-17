@@ -1,0 +1,7 @@
+# Ignorer tout ce qui est en dehors du projet
+*
+!.gitignore
+!*.html
+!*.css
+!*.js
+!images/
